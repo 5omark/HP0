@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background: #111;
+  background: #1a3d7c;
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -19,13 +19,13 @@ header {
 }
 
 section {
-  padding: 40px 20px;
+  padding: 60px 20px; 
   max-width: 800px;
   margin: auto;
 }
 
 h2 {
-  border-left: 4px solid #111;
+  border-left: 4px solid #1a3d7c;
   padding-left: 10px;
 }
 
