@@ -1,3 +1,13 @@
+/* 画面はみ出し防止 */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ← 横スクロール完全防止 */
+}
 body {
   font-family: "Noto Sans JP", sans-serif;
   margin: 0;
