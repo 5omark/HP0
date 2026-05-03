@@ -61,6 +61,11 @@ h2 {
   margin: 0;
 }
 
+.office {
+  line-height: 1.8;
+  font-size: 15px;
+}
+
 /* ===== フッター ===== */
 footer {
   background: #1a3d7c;
