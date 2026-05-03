@@ -7,14 +7,14 @@ body {
   margin: 0;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.7;
-  color: #fff;
+  color:　#333;
   background: #fff;
 }
 
 /* ===== ヘッダー ===== */
 .header {
   background: #1a3d7c;
-  color: #0000FF
+  color: #fff;
   text-align: center;
   padding: 60px 20px;
 }
