@@ -49,3 +49,37 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+/* ヘッダー全体 */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 横並び */
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* 左側 */
+.header-left h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-left p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* 右側 */
+.header-right {
+  text-align: right;
+  font-size: 14px;
+}
