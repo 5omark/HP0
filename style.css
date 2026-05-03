@@ -1,4 +1,4 @@
-/* 画面はみ出し防止 */
+/* ===== リセット系 ===== */
 * {
   box-sizing: border-box;
 }
@@ -6,32 +6,61 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* ← 横スクロール完全防止 */
+  overflow-x: hidden;
 }
+
+/* ===== 全体 ===== */
 body {
   font-family: "Noto Sans JP", sans-serif;
-  margin: 0;
   line-height: 1.8;
   color: #333;
 }
 
-header {
-  background: #1a3d7c;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
+/* ===== ヘッダー（ここが重要） ===== */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
-.hero {
-  background: #f5f5f5;
-  text-align: center;
-  padding: 60px 20px;
+/* 横並び（画面いっぱい使う） */
+.header-inner {
+  width: 100%;              /* ←これが重要 */
+  max-width: 1100px;        /* 少し広げた */
+  margin: 0 auto;
+  padding: 20px 20px;
+
+  display: flex;
+  justify-content: space-between; /* 左右に分離 */
+  align-items: center;            /* 高さ揃え */
 }
 
+/* 左側 */
+.header-left h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #000;
+}
+
+.header-left p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #555;
+  max-width: 500px; /* 横に広がりすぎ防止 */
+}
+
+/* 右側 */
+.header-right {
+  text-align: right;
+  font-size: 14px;
+  color: #000;
+  white-space: nowrap; /* 改行防止（重要） */
+}
+
+/* ===== コンテンツ ===== */
 section {
-  padding: 60px 20px; 
+  padding: 60px 20px;
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 h2 {
@@ -43,48 +72,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* ===== フッター ===== */
 footer {
   background: #111;
   color: white;
   text-align: center;
   padding: 20px;
-}
-
-/* ヘッダー全体 */
-.header {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-}
-
-/* 横並び */
-.header-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-/* 左側 */
-.header-left h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
-.header-left p {
-  margin-top: 8px;
-  font-size: 14px;
-  color: #555;
-}
-
-/* 右側 */
-.header-right {
-  text-align: right;
-  font-size: 14px;
-}
-
-header {
-  background: #111;
-  color: white;
 }
