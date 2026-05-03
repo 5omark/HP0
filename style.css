@@ -1,4 +1,4 @@
-/* ===== リセット系 ===== */
+/* ===== リセット ===== */
 * {
   box-sizing: border-box;
 }
@@ -13,57 +13,68 @@ html, body {
 body {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
-  color: #333;
+  color: #333; /* ←これが重要（黒文字に戻す） */
+  background: #fff;
 }
 
-/* ===== ヘッダー ===== */
-/* ===== ヘッダー ===== */
+/* ===== ヘッダー（触らない） ===== */
 .header {
-  background: #0f2f5c;
+  background: #1a3d7c;
   color: #fff;
   text-align: center;
   padding: 60px 20px;
 }
 
 .header-inner {
-  max-width: 900px; /* ←少し絞る */
+  max-width: 900px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .header h1 {
   margin: 0;
-  font-size: 40px; /* ←しっかり主張 */
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-size: 36px;
 }
 
 .header p {
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 16px;
   line-height: 1.4;
 }
-/* ===== コンテンツ ===== */
+
+/* ===== コンテンツ（ここ修正ポイント） ===== */
 section {
+  background: #fff; /* ←白背景に固定 */
   padding: 40px 20px;
   max-width: 800px;
-  margin-left: 40px;
-  background: #fff;
+  margin: 0 auto;
 }
 
+/* セクション間バランス */
+section + section {
+  margin-top: 10px;
+}
+
+/* 見出し */
 h2 {
   border-left: 4px solid #1a3d7c;
   padding-left: 10px;
-  margin-bottom: 15px; /* ←追加 */
+  margin-bottom: 15px;
 }
 
+/* テキスト */
+p {
+  margin-bottom: 10px;
+  color: #333; /* ←強制的に黒に */
+}
+
+/* サービス */
 .service {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-/* ===== フッター ===== */
+/* ===== フッター（触らない） ===== */
 footer {
-  background: #0f2f5c;
+  background: #1a3d7c;
   color: #fff;
   text-align: center;
   padding: 20px;
