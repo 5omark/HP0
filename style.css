@@ -1,81 +1,70 @@
-/* ===== リセット系 ===== */
+/* ===== リセット ===== */
 * {
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-/* ===== 全体 ===== */
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  line-height: 1.8;
-  color: #333;
-}
-
-/* ===== ヘッダー（ここが重要） ===== */
-.header {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-}
-
-/* 横並び（画面いっぱい使う） */
-.header-inner {
-  width: 100%;              /* ←これが重要 */
-  max-width: 1100px;        /* 少し広げた */
-  margin: 0 auto;
-  padding: 20px 20px;
-
-  display: flex;
-  justify-content: space-between; /* 左右に分離 */
-  align-items: center;            /* 高さ揃え */
-}
-
-/* 左側 */
-.header-left h1 {
   margin: 0;
-  font-size: 26px;
-  color: #000;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background: #fff;
 }
 
-.header-left p {
-  margin-top: 6px;
-  font-size: 14px;
-  color: #555;
-  max-width: 500px; /* 横に広がりすぎ防止 */
+/* ===== ヘッダー ===== */
+.header {
+  background: #1a3d7c;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
 }
 
-/* 右側 */
-.header-right {
-  text-align: right;
-  font-size: 14px;
-  color: #000;
-  white-space: nowrap; /* 改行防止（重要） */
+.header-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.header p {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 /* ===== コンテンツ ===== */
 section {
-  padding: 60px 20px;
   max-width: 800px;
   margin: 0 auto;
+  padding: 40px 20px;
+  background: #fff;
 }
 
 h2 {
   border-left: 4px solid #1a3d7c;
   padding-left: 10px;
+  margin-bottom: 20px;
 }
 
 .service {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+.service p {
+  margin: 0;
 }
 
 /* ===== フッター ===== */
 footer {
-  background: #111;
-  color: white;
+  background: #1a3d7c;
+  color: #fff;
   text-align: center;
   padding: 20px;
 }
