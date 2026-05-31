@@ -73,3 +73,9 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+.line-qr {
+  width: 180px;
+  height: auto;
+  margin-top: 10px;
+}
